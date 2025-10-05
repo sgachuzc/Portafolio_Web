@@ -1,11 +1,14 @@
 import { Navbar } from './components/Navbar';
+import { HeroSection } from './sections/HeroSection';
 
 function App() {
 
   return (
     <>
       <Navbar />
-      Hola Mundo
+      <main>
+        <HeroSection/>
+      </main>
     </>
   )
 }
