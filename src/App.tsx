@@ -1,5 +1,5 @@
 import { Navbar } from './components/Navbar';
-import { ExperienceSection, HeroSection } from './sections';
+import { ExperienceSection, HeroSection, TechSection } from './sections';
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
       <main>
         <HeroSection/>
         <ExperienceSection />
+        <TechSection />
       </main>
     </>
   )
