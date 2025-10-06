@@ -31,12 +31,19 @@ export const Navbar = () => {
 
   return (
     <header className="flex justify-center items-center w-full p-4">
-      <NavigationMenu className="max-w-80 border p-3 rounded-full h-14">
+      <NavigationMenu className="max-w-80 border p-3 rounded-full h-14 gap-2">
+        <NavigationMenuList>
+          <NavigationMenuItem>
+              <a href="./">
+                <img src="/black_logo.png" alt="logo" className="h-8 filter saturate-10" width={80} height={50}/>              
+              </a>
+          </NavigationMenuItem>
+        </NavigationMenuList>
         <NavigationMenuList className="flex justify-between items-center gap-4 h-8">
           <Separator orientation="vertical" />
           {
             menuOptions.map( option => (
-              <NavigationMenuItem>
+              <NavigationMenuItem key={option.label}>
                 <NavigationMenuLink asChild>
                     <Tooltip>
                       <TooltipTrigger>
