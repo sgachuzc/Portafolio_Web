@@ -1,4 +1,5 @@
 import { Accordion } from "@/components/Accordion";
+import { Title } from "@/components/Title";
 import type { Job } from "@/interfaces";
 
 export const ExperienceSection = () => {
@@ -22,14 +23,14 @@ export const ExperienceSection = () => {
       badges: [],
       start: 'Octubre 2020',
       end: 'Julio 2021',
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati mollitia repudiandae quaerat nam quia accusantium in aperiam deserunt, vitae deleniti nihil, rerum cumque velit reprehenderit veniam sunt, fugiat minus ad."
+      description: "Participación full-stack del desarrollo de una aplicación web para la capacitación y evaluación en términos de seguridad vial a los empleados municipales. Líder del equipo de sistemas delegando tareas para las diversas actividades dentro de la dependencia. Programación y soporte de video conferencias para las capacitaciones virtuales de los empleados."
     }
   ]
 
   return (
     <>
-      <section className='w-11/12 sm:w-2/4 flex min-h-0 flex-col gap-y-3 mx-auto my-5' id="experience">
-        <h2 className="text-xl font-bold">Experiencia Laboral</h2>
+      <section className='w-11/12 sm:w-2/4 flex min-h-0 flex-col gap-y-3 mx-auto my-10' id="experience" data-aos="fade-up">
+        <Title title="Experiencia Laboral"/>
         {
           jobs.map( job => (
             <Accordion
@@ -46,8 +47,8 @@ export const ExperienceSection = () => {
           ))
         }
       </section>
-      <section className='w-11/12 sm:w-2/4 flex min-h-0 flex-col gap-y-3 mx-auto my-5'>
-        <h2 className="text-xl font-bold">Educación</h2>
+      <section className='w-11/12 sm:w-2/4 flex min-h-0 flex-col gap-y-3 mx-auto my-10' data-aos="fade-up">
+        <Title title="Educación"/>
         <Accordion
           key={"ITC"}
           logoUrl={"https://res.cloudinary.com/dksmbhbed/image/upload/v1759790278/PortafolioWeb/itc_d54hrq.png"}
