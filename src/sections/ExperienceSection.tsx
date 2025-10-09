@@ -1,4 +1,5 @@
 import { Accordion } from "@/components/Accordion";
+import { Section } from "@/components/Section";
 import { Title } from "@/components/Title";
 import type { Job } from "@/interfaces";
 
@@ -28,37 +29,23 @@ export const ExperienceSection = () => {
   ]
 
   return (
-    <>
-      <section className='w-11/12 sm:w-2/4 flex min-h-0 flex-col gap-y-3 mx-auto my-10' id="experience" data-aos="fade-up">
-        <Title title="Experiencia Laboral"/>
-        {
-          jobs.map( job => (
-            <Accordion
-              key={job.company}
-              logoUrl={job.logoUrl}
-              altText={job.company}
-              title={job.company}
-              subtitle={job.subtitle}
-              href={job.href}
-              badges={job.badges}
-              period={`${job.start} - ${job.end}`}
-              description={job.description}
-            />
-          ))
-        }
-      </section>
-      <section className='w-11/12 sm:w-2/4 flex min-h-0 flex-col gap-y-3 mx-auto my-10' data-aos="fade-up">
-        <Title title="Educación"/>
-        <Accordion
-          key={"ITC"}
-          logoUrl={"https://res.cloudinary.com/dksmbhbed/image/upload/v1759790278/PortafolioWeb/itc_d54hrq.png"}
-          altText={"ITC"}
-          title={"Instituto Tecnológico de Celaya"}
-          subtitle={"Ingeniería en Sistemas Computacionales"}
-          href={"https://celaya.tecnm.mx/"}
-          period={"2014 - 2020"}
-        />
-      </section>
-    </>
+    <Section id="experience">
+      <Title title="Experiencia Laboral"/>
+      {
+        jobs.map( job => (
+          <Accordion
+            key={job.company}
+            logoUrl={job.logoUrl}
+            altText={job.company}
+            title={job.company}
+            subtitle={job.subtitle}
+            href={job.href}
+            badges={job.badges}
+            period={`${job.start} - ${job.end}`}
+            description={job.description}
+          />
+        ))
+      }
+    </Section>
   )
 }
