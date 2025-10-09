@@ -1,3 +1,4 @@
+import { Section } from "@/components/Section"
 import { Title } from "@/components/Title"
 import { Badge } from "@/components/ui/badge"
 
@@ -24,7 +25,7 @@ export const TechSection = () => {
   ]
 
   return(
-    <section className='w-11/12 sm:w-2/4 flex min-h-0 flex-col gap-y-3 mx-auto my-10' id="technologies">
+    <Section id="technologies">
       <Title title="Tecnologías"/>
       <div className="flex flex-wrap gap-2">
         { 
@@ -33,6 +34,6 @@ export const TechSection = () => {
           ))
         }
       </div>
-    </section>
+    </Section>
   )
 }

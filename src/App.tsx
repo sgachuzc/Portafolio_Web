@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Navbar } from './components/Navbar';
-import { ExperienceSection, HeroSection, TechSection } from './sections';
+import { EducationSection, ExperienceSection, HeroSection, ProjectsSection, TechSection } from './sections';
 import AOS from 'aos';
 
 function App() {
@@ -15,7 +15,9 @@ function App() {
       <main>
         <HeroSection/>
         <ExperienceSection />
+        <EducationSection />
         <TechSection />
+        <ProjectsSection />
       </main>
     </>
   )
