@@ -1,8 +1,8 @@
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuLink, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
-import { BriefcaseBusiness, Cpu, FolderRoot, User } from "lucide-react"
+import { BriefcaseBusiness, Cpu, FolderRoot, GraduationCap, User } from "lucide-react"
 import { Separator } from "@/components/ui/separator"
-import type { MenuOption } from "@/interfaces/MenuOption"
+import type { MenuOption } from "@/interfaces"
 
 export const Navbar = () => {
 
@@ -18,6 +18,11 @@ export const Navbar = () => {
       icon: <BriefcaseBusiness className="size-4 cursor-pointer" color="black"/>
     },
     {
+      label: "Educación",
+      href: "#education",
+      icon: <GraduationCap className="size-4 cursor-pointer" color="black"/>
+    },
+    {
       label: "Tecnologías",
       href: "#technologies",
       icon: <Cpu className="size-4 cursor-pointer" color="black"/>
@@ -31,7 +36,7 @@ export const Navbar = () => {
 
   return (
     <header className="flex justify-center items-center w-full p-4">
-      <NavigationMenu className="max-w-80 border p-3 rounded-full h-14 gap-2">
+      <NavigationMenu className="max-w-96 border p-3 rounded-full h-14 gap-2">
         <NavigationMenuList>
           <NavigationMenuItem>
               <a href="./">
