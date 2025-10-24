@@ -35,7 +35,7 @@ export const Navbar = () => {
   ]
 
   return (
-    <header className="flex justify-center items-center w-full p-4">
+    <header className="flex justify-center items-center w-full p-4 h-20 fixed top-0 z-50 bg-white">
       <NavigationMenu className="max-w-96 border p-3 rounded-full h-14 gap-2">
         <NavigationMenuList>
           <NavigationMenuItem>

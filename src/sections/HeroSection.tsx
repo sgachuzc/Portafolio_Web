@@ -5,7 +5,7 @@ import { AuroraText } from "@/components/ui/aurora-text"
 
 export const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden sm:py-15 py-5 flex justify-center items-center">
+    <section className="relative overflow-hidden sm:py-15 py-5 flex justify-center items-center h-dvh">
       <div className="absolute inset-x-0 top-0 flex h-full w-full items-center justify-center opacity-100">
         <img
           alt="background"

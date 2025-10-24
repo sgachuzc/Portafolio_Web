@@ -1,3 +1,4 @@
+export * from './AboutSection'
 export * from './EducationSection'
 export * from './ExperienceSection'
 export * from './HeroSection'
