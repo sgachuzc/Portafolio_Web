@@ -1,29 +1,9 @@
 import { Section } from "@/components/Section"
 import { Title } from "@/components/Title"
 import { Badge } from "@/components/ui/badge"
+import { stack } from "@/mocks"
 
 export const TechSection = () => {
-
-  const stack = [
-    "Magento",
-    "Laravel",
-    "PHP",
-    "MySQL",
-    "NodeJs",
-    "Express",
-    "HTML",
-    "CSS",
-    "Javascript",
-    "TypeScript",
-    "React",
-    "Bootstrap",
-    "TailwindCSS",
-    "Git",
-    "GitHub",
-    "Gitlab",
-    "Scrum"
-  ]
-
   return(
     <Section id="technologies">
       <Title title="Tecnologías"/>
