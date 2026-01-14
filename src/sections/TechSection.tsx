@@ -10,7 +10,7 @@ export const TechSection = () => {
       <div className="flex flex-wrap gap-2">
         { 
           stack.map( tech => (
-            <Badge key={tech} className="text-md hover:bg-primary/80" data-aos="zoom-in">{ tech }</Badge>
+            <Badge key={tech} className="text-md hover:bg-primary/50" data-aos="zoom-in">{ tech }</Badge>
           ))
         }
       </div>

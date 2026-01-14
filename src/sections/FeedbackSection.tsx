@@ -1,6 +1,5 @@
 import { Section } from '@/components/Section'
 import { Button } from "@/components/ui/button";
-import { Separator } from '@/components/ui/separator';
 import { MessageCircle, Rocket, SquareCode } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { toast } from "sonner"
@@ -8,9 +7,9 @@ import { toast } from "sonner"
 type BlockedButtonColors = keyof typeof buttons
 
 const buttons = {
-  incredible: "bg-blue-600 text-white animate-pulse disabled:opacity-100",
-  cleanCode: "bg-blue-600 text-white animate-pulse disabled:opacity-100",
-  meetup: "bg-blue-600 text-white animate-pulse disabled:opacity-100",
+  incredible: "bg-blue-600 text-white animate-pulse disabled:opacity-100 hover:-translate-y-1 transition-transform",
+  cleanCode: "bg-blue-600 text-white animate-pulse disabled:opacity-100 hover:-translate-y-1 transition-transform",
+  meetup: "bg-blue-600 text-white animate-pulse disabled:opacity-100 hover:-translate-y-1 transition-transform",
 }
 
 export const FeedbackSection = () => {
@@ -36,8 +35,7 @@ export const FeedbackSection = () => {
 
   return (
     <Section id='feedback'>
-      <Separator className='mb-20' />
-      <h2 className="text-center text-3xl font-semibold">
+      <h2 className="text-center text-3xl font-semibold mt-15">
         ¿Qué te pareció
         <br />
         <span className="text-muted-foreground/80">

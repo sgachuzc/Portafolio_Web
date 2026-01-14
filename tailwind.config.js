@@ -1,0 +1,20 @@
+import('tailwindcss').Config
+
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Ubuntu', 'sans-serif'],
+      },
+      fontWeight: {
+        'extra-light': 200,
+        'extra-bold': 800,
+      },
+    },
+  },
+  plugins: [],
+}

@@ -39,6 +39,7 @@ export const Accordion = ({
       href={href || "#"}
       className="block cursor-pointer"
       onClick={handleClick}
+      target="__blank"
     >
       <div className="rounded-lg bg-card text-card-foreground flex">
         <div className="flex-none">

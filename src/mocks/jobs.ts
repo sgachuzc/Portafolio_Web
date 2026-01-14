@@ -5,13 +5,13 @@ export const jobs: Job[] = [
     company: "NTT Data",
     logoUrl:
       "https://res.cloudinary.com/dksmbhbed/image/upload/v1759783839/PortafolioWeb/nttdata_logo_mqeqhl.png",
-    subtitle: "Desarrollador Web",
+    subtitle: "Desarrollador Web Full Stack",
     href: "",
     badges: [],
     start: "Febrero 2022",
     end: "Presente",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati mollitia repudiandae quaerat nam quia accusantium in aperiam deserunt, vitae deleniti nihil, rerum cumque velit reprehenderit veniam sunt, fugiat minus ad.",
+      "Desarrollo de módulos complejos para flujos de venta y tecnología eSIM. Construcción de herramientas de importación y procesamiento de órdenes masivas. Integración de ecosistemas de marketing (Mautic, Meta, APIs) para captación de leads. Mentoria técnica al equipo y elaboración de documentación y capacitaciones sobre Magento.",
   },
   {
     company: "Freelance",

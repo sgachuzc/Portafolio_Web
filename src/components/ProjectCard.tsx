@@ -51,7 +51,7 @@ export const ProjectCard: React.FC<Project> = ({ name, company, description, rep
       <CardFooter className='flex flex-wrap gap-2'>
         {
           technologies.map( tech => (
-            <Badge key={tech} className="px-2 py-1 text-sm font-medium hover:bg-primary/80">{ tech }</Badge>
+            <Badge key={tech} className="px-2 py-1 text-sm font-medium hover:bg-primary/50">{ tech }</Badge>
           ))
         }
       </CardFooter>
