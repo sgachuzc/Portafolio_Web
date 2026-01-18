@@ -18,7 +18,7 @@ export const HeroSection = () => {
           <div className="flex flex-col items-center gap-6 text-center">
             <div className="rounded-xl bg-background/30 p-4 shadow-sm backdrop-blur-sm">
               <img
-                src="/black_logo.png"
+                src="./images/black_logo.png"
                 alt="logo"
                 className="h-16 filter saturate-10"
               />
