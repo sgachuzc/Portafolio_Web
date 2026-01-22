@@ -35,8 +35,8 @@ export const ProjectsSection = () => {
             ))
           }
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="hidden md:flex" />
+        <CarouselNext className="hidden md:flex" />
       </Carousel>
       <div className="text-muted-foreground py-2 text-center text-sm">
         Proyecto {current} de {count}
