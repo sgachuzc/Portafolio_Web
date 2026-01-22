@@ -3,7 +3,13 @@ import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { AuroraText } from "@/components/ui/aurora-text"
 
-export const HeroSection = () => {
+interface HeroProps {
+  isHighlighting: boolean;
+}
+
+const hightlightClass = "border border-blue-500/80 shadow-cyan-500/50 scale-125 transition-all duration-300";
+
+export const HeroSection = ({ isHighlighting }: HeroProps) => {
   return (
     <section className="relative overflow-hidden sm:py-15 py-5 flex justify-center items-center h-dvh">
       <div className="absolute inset-x-0 top-0 flex h-full w-full items-center justify-center opacity-100">
@@ -50,7 +56,7 @@ export const HeroSection = () => {
                   target="_blank"
                   className={cn(
                     buttonVariants({ variant: "outline" }),
-                    "group flex aspect-square h-12 items-center justify-center p-0",
+                    `group flex aspect-square h-12 items-center justify-center p-0 ${isHighlighting ? hightlightClass : ""}`,
                   )}
                 >
                   <img
@@ -64,7 +70,7 @@ export const HeroSection = () => {
                   target="_blank"
                   className={cn(
                     buttonVariants({ variant: "outline" }),
-                    "group flex aspect-square h-12 items-center justify-center p-0",
+                    `group flex aspect-square h-12 items-center justify-center p-0 ${isHighlighting ? hightlightClass : ""}`,
                   )}
                 >
                   <img

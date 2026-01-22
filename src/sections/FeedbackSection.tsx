@@ -7,9 +7,9 @@ import { toast } from "sonner"
 type BlockedButtonColors = keyof typeof buttons
 
 const buttons = {
-  incredible: "bg-blue-600 text-white animate-pulse disabled:opacity-100 hover:-translate-y-1 transition-transform",
-  cleanCode: "bg-blue-600 text-white animate-pulse disabled:opacity-100 hover:-translate-y-1 transition-transform",
-  meetup: "bg-blue-600 text-white animate-pulse disabled:opacity-100 hover:-translate-y-1 transition-transform",
+  incredible: "border border-blue-500/50 bg-blue-500/50 shadow-cyan-500 text-white animate-pulse disabled:opacity-100 hover:-translate-y-1 transition-transform",
+  cleanCode: "border border-blue-500/50 bg-blue-500/50 shadow-cyan-500 text-white animate-pulse disabled:opacity-100 hover:-translate-y-1 transition-transform",
+  meetup: "border border-blue-500/50 bg-blue-500/50 shadow-cyan-500 text-white animate-pulse disabled:opacity-100 hover:-translate-y-1 transition-transform",
 }
 
 export const FeedbackSection = () => {
