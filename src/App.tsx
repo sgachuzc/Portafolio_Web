@@ -1,27 +1,16 @@
-import { useEffect, useState } from 'react';
 import { Footer } from './components/Footer';
 import { AboutSection, EducationSection, ExperienceSection, FeedbackSection, HeroSection, ProjectsSection, TechSection } from './sections';
-import AOS from 'aos';
 import { Toaster } from 'sonner';
+import { FloatingButton } from './components/FloatingButton';
+import { useAppHooks } from './hooks/useAppHooks';
 
 function App() {
-  const [isMobile, setIsMobile] = useState<boolean>(false);
-
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 768);
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, [])
-
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  const { visible, isHighlighting, onScrollTop, isMobile } = useAppHooks();
 
   return (
     <>
       <main>
-        <HeroSection/>
+        <HeroSection isHighlighting={isHighlighting}/>
         <AboutSection />
         <ExperienceSection />
         <EducationSection />
@@ -29,6 +18,7 @@ function App() {
         <ProjectsSection />
         <FeedbackSection />
       </main>
+      <FloatingButton visible={visible} onScrollTop={onScrollTop}/>
       <Toaster position={isMobile ? 'top-center' : 'bottom-left'} className='w-min max-w-sm' />
       <Footer />
     </>
