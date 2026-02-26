@@ -1,9 +1,6 @@
-import { Accordion } from "@/components/Accordion"
-import { CourseCard } from "@/components/CourseCard"
-import { Section } from "@/components/Section"
-import { Title } from "@/components/Title"
+import { Accordion, CourseCard, Section, Title } from "@/components"
 import { Marquee } from "@/components/ui/marquee"
-import { courses } from '../mocks/courses';
+import { courses } from '@/mocks';
 
 export const EducationSection = () => {
   return (

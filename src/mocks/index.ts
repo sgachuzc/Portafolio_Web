@@ -1,4 +1,5 @@
 export * from './courses'
 export * from './jobs'
 export * from './projects'
+export * from './socialMedia'
 export * from './stack'

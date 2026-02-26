@@ -20,8 +20,20 @@ export const jobs: Job[] = [
     subtitle: "Desarrollador Web",
     href: "",
     badges: [],
-    start: "Julio 2021",
-    end: "Presente",
+    start: "Junio 2025",
+    end: "Noviembre 2025",
+    description:
+      "Desarrollo de sitios web y aplicaciones web a la medida para clientes diversos, utilizando tecnologías modernas como React, Laravel, Node.js y bases de datos SQL. Implementación de soluciones escalables y optimizadas para mejorar la presencia en línea y la funcionalidad de los negocios de mis clientes.",
+  },
+  {
+    company: "Freelance",
+    logoUrl:
+      "https://res.cloudinary.com/dksmbhbed/image/upload/v1760158429/PortafolioWeb/black_logo_tjgtkk.png",
+    subtitle: "Desarrollador Web",
+    href: "",
+    badges: [],
+    start: "Agosto 2022",
+    end: "Diciembre 2022",
     description:
       "Desarrollo de sitios web y aplicaciones web a la medida para clientes diversos, utilizando tecnologías modernas como React, Laravel, Node.js y bases de datos SQL. Implementación de soluciones escalables y optimizadas para mejorar la presencia en línea y la funcionalidad de los negocios de mis clientes.",
   },

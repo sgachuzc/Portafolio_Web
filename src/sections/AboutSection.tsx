@@ -1,5 +1,4 @@
-import { Section } from "@/components/Section"
-import { Title } from "@/components/Title"
+import { Section, Title } from "@/components"
 
 export const AboutSection = () => {
   return (

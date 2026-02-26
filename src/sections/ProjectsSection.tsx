@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react"
-import { ProjectCard } from "@/components/ProjectCard"
-import { Section } from "@/components/Section"
-import { Title } from "@/components/Title"
+import { ProjectCard, Section, Title } from "@/components"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/ui/carousel"
 import { projects } from "@/mocks"
 

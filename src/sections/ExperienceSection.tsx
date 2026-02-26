@@ -1,6 +1,4 @@
-import { Accordion } from "@/components/Accordion";
-import { Section } from "@/components/Section";
-import { Title } from "@/components/Title";
+import { Accordion, Section, Title } from "@/components";
 import { jobs } from "@/mocks";
 
 export const ExperienceSection = () => {

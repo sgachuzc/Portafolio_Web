@@ -1,7 +1,7 @@
-import { Download } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { useSearchParams } from "@/hooks/useSearchParams";
 import { AuroraText } from "@/components/ui/aurora-text"
+import { CVButton, SocialMediaButton } from "@/components";
+import { socialMedia } from "@/mocks";
 
 interface HeroProps {
   isHighlighting: boolean;
@@ -10,6 +10,9 @@ interface HeroProps {
 const hightlightClass = "border border-blue-500/80 shadow-cyan-500/50 scale-125 transition-all duration-300";
 
 export const HeroSection = ({ isHighlighting }: HeroProps) => {
+
+  const { showElement } =useSearchParams();
+
   return (
     <section className="relative overflow-hidden sm:py-15 py-5 flex justify-center items-center h-dvh">
       <div className="absolute inset-x-0 top-0 flex h-full w-full items-center justify-center opacity-100">
@@ -38,47 +41,24 @@ export const HeroSection = ({ isHighlighting }: HeroProps) => {
                 Programar es convertir la complejidad en claridad. Es crear sistemas que no solo funcionan, sino que se adaptan, crecen y conectan con las personas
               </p>
             </div>
-            <div className="mt-6 flex justify-center gap-3">
-              <Button variant="link" className="group bg-black text-white shadow-sm transition-shadow hover:shadow hover:no-underline hover:cursor-pointer" asChild>
-                <a href="./assets/Curriculum.pdf" target='_blank'>
-                  Descargar CV{" "}
-                  <Download className="ml-2 h-4 transition-transform group-hover:translate-x-0.5" />
-                </a>
-              </Button>
-            </div>
+            { showElement && ( <CVButton/> ) }
             <div className="mt-10 sm:mt-16 flex flex-col items-center gap-5">
               <p className="font-medium text-muted-foreground lg:text-left">
                 Encuentrame en:
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4">
-                <a
-                  href="https://www.linkedin.com/in/sgachuzc/"
-                  target="_blank"
-                  className={cn(
-                    buttonVariants({ variant: "outline" }),
-                    `group flex aspect-square h-12 items-center justify-center p-0 ${isHighlighting ? hightlightClass : ""}`,
-                  )}
-                >
-                  <img
-                    src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/linkedin-icon.svg"
-                    alt="LinkedIn logo"
-                    className="h-6 saturate-0 transition-all group-hover:saturate-100"
-                  />
-                </a>
-                <a
-                  href="https://github.com/sgachuzc"
-                  target="_blank"
-                  className={cn(
-                    buttonVariants({ variant: "outline" }),
-                    `group flex aspect-square h-12 items-center justify-center p-0 ${isHighlighting ? hightlightClass : ""}`,
-                  )}
-                >
-                  <img
-                    src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-icon.svg"
-                    alt="Github logo"
-                    className="h-6 saturate-0 transition-all group-hover:saturate-100"
-                  />
-                </a>
+                {
+                  socialMedia.map( ({ linkTo, imgUrl, altText }) => (
+                    <SocialMediaButton
+                      key={altText}
+                      linkTo={linkTo}
+                      imgUrl={imgUrl}
+                      altText={altText}
+                      isHighlighting={isHighlighting}
+                      hightlightClass={hightlightClass}
+                    />
+                  ))
+                }
               </div>
             </div>
           </div>
