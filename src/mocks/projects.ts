@@ -2,10 +2,11 @@ import type { Project } from "@/interfaces";
 
 export const projects: Project[] = [
   {
-    name: "Gestor de servicios para Consultora RPS",
-    company: "Freelance",
+    name: "Sistema de Gestión de Auditorías y Certificación Automatizada",
+    company: "Freelance (Cliente: RPS Consulting)",
     description:
       "Herramienta web elaborada para Risk Reduction & Problem Solving Consulting Services (RPS) para la administración de cursos y auditorias para empresas cliente, facilitando la gestión de inscripciones, seguimiento de progreso y generación de certificados.",
+    projectUrl: "https://rpsconsulting.com.mx",
     technologies: ["PHP", "Laravel", "MySQL", "Bootstrap", "Javascript"],
   },
   {
@@ -18,7 +19,7 @@ export const projects: Project[] = [
   },
   {
     name: "Gestor de Presupuesto Municipal",
-    company: "Freelance",
+    company: "Ayuntamiento de Celaya",
     description:
       "Herramienta web de gestión financiera desarrollada para apoyar a la Presidencia Municipal de Celaya en la administración de sus recursos presupuestarios, facilitando la asignación, seguimiento y control de fondos para las diferentes direcciones y proyectos municipales.",
     technologies: ["NodeJS", "ExpressJS", "MySQL", "HTML", "CSS", "Javascript"],

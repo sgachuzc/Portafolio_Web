@@ -14,33 +14,31 @@ export const jobs: Job[] = [
       "Desarrollo de módulos complejos para flujos de venta y tecnología eSIM. Construcción de herramientas de importación y procesamiento de órdenes masivas. Integración de ecosistemas de marketing (Mautic, Meta, APIs) para captación de leads. Mentoria técnica al equipo y elaboración de documentación y capacitaciones sobre Magento.",
   },
   {
-    company: "Freelance",
+    company: "Freelance (Cliente: RPS Consulting)",
     logoUrl:
-      "https://res.cloudinary.com/dksmbhbed/image/upload/v1760158429/PortafolioWeb/black_logo_tjgtkk.png",
-    subtitle: "Desarrollador Web",
+      "https://res.cloudinary.com/dksmbhbed/image/upload/v1772598553/PortafolioWeb/rps_zoedlc.png",
+    subtitle: "Desarrollador Web Fullstack",
     href: "",
     badges: [],
     start: "Junio 2025",
-    end: "Noviembre 2025",
+    end: "Febrero 2026",
     description:
-      "Desarrollo de sitios web y aplicaciones web a la medida para clientes diversos, utilizando tecnologías modernas como React, Laravel, Node.js y bases de datos SQL. Implementación de soluciones escalables y optimizadas para mejorar la presencia en línea y la funcionalidad de los negocios de mis clientes.",
+      "Desarrollo de plataforma integral para la gestión de certificaciones industriales, automatizando el flujo de trabajo desde la inscripción masiva de empleados hasta la generación de reportes analíticos en tiempo real.",
   },
   {
-    company: "Freelance",
-    logoUrl:
-      "https://res.cloudinary.com/dksmbhbed/image/upload/v1760158429/PortafolioWeb/black_logo_tjgtkk.png",
-    subtitle: "Desarrollador Web",
+    company: "Ayuntamiento de Celaya",
+    logoUrl: "https://res.cloudinary.com/dksmbhbed/image/upload/v1759785644/PortafolioWeb/celaya_b3peqq.png",
+    subtitle: "Desarrollador Web & Asesor Técnico",
     href: "",
     badges: [],
     start: "Agosto 2022",
     end: "Diciembre 2022",
     description:
-      "Desarrollo de sitios web y aplicaciones web a la medida para clientes diversos, utilizando tecnologías modernas como React, Laravel, Node.js y bases de datos SQL. Implementación de soluciones escalables y optimizadas para mejorar la presencia en línea y la funcionalidad de los negocios de mis clientes.",
+      "Apoyé en el desarrollo de un gestor de presupuesto para una dirección del Ayuntamiento de Celaya. Contribuí en la definición de la base de datos, conexión a la misma, implementación de CRUD y maquetación de páginas con diseño responsivo. Además, asesoré a la residente para que desarrollara la mayor parte de la aplicación de manera autónoma, brindando orientación técnica y resolviendo dudas.",
   },
   {
     company: "Ayuntamiento de Celaya",
-    logoUrl:
-      "https://res.cloudinary.com/dksmbhbed/image/upload/v1759785644/PortafolioWeb/celaya_b3peqq.png",
+    logoUrl: "https://res.cloudinary.com/dksmbhbed/image/upload/v1759785644/PortafolioWeb/celaya_b3peqq.png",
     subtitle: "Desarrollador Web",
     href: "",
     badges: [],

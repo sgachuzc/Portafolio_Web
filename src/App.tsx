@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <main>
+      <main className="min-h-dvh bg-white">
         <HeroSection isHighlighting={isHighlighting}/>
         <AboutSection />
         <ExperienceSection />
