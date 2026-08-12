@@ -1,16 +1,16 @@
 import { Footer } from './components/Footer';
 import { AboutSection, EducationSection, ExperienceSection, FeedbackSection, HeroSection, ProjectsSection, TechSection } from './sections';
 import { Toaster } from 'sonner';
-import { FloatingButton } from './components/FloatingButton';
+import { FloatingButton } from '@/components';
 import { useAppHooks } from './hooks/useAppHooks';
 
 function App() {
-  const { visible, isHighlighting, onScrollTop, isMobile } = useAppHooks();
+  const { visible, onScrollTop, isMobile } = useAppHooks();
 
   return (
     <>
       <main className="min-h-dvh bg-white">
-        <HeroSection isHighlighting={isHighlighting}/>
+        <HeroSection />
         <AboutSection />
         <ExperienceSection />
         <EducationSection />
