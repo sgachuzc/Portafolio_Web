@@ -1,5 +1,5 @@
 import { Footer } from './components/Footer';
-import { AboutSection, EducationSection, ExperienceSection, FeedbackSection, HeroSection, ProjectsSection, TechSection } from './sections';
+import { AboutSection, EducationSection, ExperienceSection, FeedbackSection, FreelanceSection, HeroSection, ProjectsSection, TechSection } from './sections';
 import { Toaster } from 'sonner';
 import { FloatingButton } from '@/components';
 import { useAppHooks } from './hooks/useAppHooks';
@@ -13,6 +13,7 @@ function App() {
         <HeroSection />
         <AboutSection />
         <ExperienceSection />
+          <FreelanceSection />
         <EducationSection />
         <TechSection />
         <ProjectsSection />

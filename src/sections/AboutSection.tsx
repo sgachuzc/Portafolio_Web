@@ -5,7 +5,13 @@ export const AboutSection = () => {
     <Section id="about">
       <Title title="Acerca de Mí"/>
       <p className="text-justify">
-        Soy un ingeniero en sistemas computacionales, egresado del TecNM en Celaya, apasionado por la tecnología y la innovación, con un enfoque especial en el desarrollo web. Mi naturaleza autodidacta me ha permitido adquirir y perfeccionar habilidades en diversas áreas del desarrollo web, desde el front-end hasta el back-end. Me considero una persona autocritica y con el compromiso de siempre buscar mejorar y aprender de cada experiencia.
+          Soy Ingeniero en Sistemas egresado del TecNM en Celaya y Desarrollador Web
+          Full Stack con más de 5 años y medio de experiencia, enfocado principalmente en el backend.
+          Aunque me muevo con soltura en el frontend para construir interfaces funcionales y limpias,
+          donde realmente disfruto estar es en la lógica detrás de escena: diseñando arquitecturas sólidas,
+          optimizando bases de datos y creando APIs eficientes y escalables. Me motiva resolver problemas
+          complejos con código limpio y aprender constantemente nuevas formas de mejorar cada sistema que
+          construyo.
       </p>
     </Section>
   )
