@@ -7,7 +7,7 @@ export const HeroSection = () => {
   const { showElement } =useSearchParams();
 
   return (
-    <section className="dark relative overflow-hidden sm:py-15 py-5 flex justify-center items-center h-dvh bg-[#121212]">
+    <section className="dark relative overflow-hidden sm:py-15 py-5 flex justify-center items-center h-dvh ">
       <div className="absolute inset-x-0 top-0 flex h-full w-full items-center justify-center opacity-100">
         <img
           alt="background"
@@ -22,18 +22,18 @@ export const HeroSection = () => {
               <img
                 src="./images/black_logo.png"
                 alt="logo"
-                className="h-16 filter saturate-10 invert brightness-0"
+                className="h-16"
               />
             </div>
             <div>
               <h1 className="mb-0 text-6xl font-bold tracking-tighter text-pretty lg:text-9xl leading-none text-white">
-                <span className="text-primary">SERGIO </span>
+                <span className="text-black">SERGIO </span>
                 <br></br>
                 <AuroraText>GACHÚZ</AuroraText>
               </h1>
             </div>
             <div className="mt-4 mb-6 flex flex-col items-center gap-5">
-              <p className="font-medium text-muted-foreground lg:text-left">
+              <p className="font-medium text-muted lg:text-left">
                 DESARROLLADOR WEB
               </p>
             </div>
