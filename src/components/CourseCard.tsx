@@ -6,8 +6,8 @@ export const CourseCard: React.FC<Course> = ({ imageUrl, name, website }) => {
     <figure
       className={ cn(
             "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
-            "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-            "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
+            "border-neutral-200 bg-white hover:border-[#F97316]",
+            "hover:shadow-md hover:shadow-orange-500/10 hover:bg-orange-50 hover:transition-all hover:duration-200"
           )}
         >
           <div className="flex flex-row items-center gap-2">

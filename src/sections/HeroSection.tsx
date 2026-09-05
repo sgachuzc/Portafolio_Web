@@ -8,13 +8,6 @@ export const HeroSection = () => {
 
   return (
     <section className="dark relative overflow-hidden sm:py-15 py-5 flex justify-center items-center h-dvh ">
-      <div className="absolute inset-x-0 top-0 flex h-full w-full items-center justify-center opacity-100">
-        <img
-          alt="background"
-          src="./images/square-alt-grid-dark.svg"
-          className="h-full w-full object-cover [mask-image:radial-gradient(75%_75%_at_center,white,transparent)]"
-        />
-      </div>
       <div className="relative z-10 container">
         <div className="mx-auto flex max-w-5xl flex-col items-center">
           <div className="flex flex-col items-center gap-6 text-center">

@@ -22,7 +22,7 @@ export const ProjectCard: React.FC<Project> = ({ name, company, description, rep
         <div className='flex items-center gap-2'>
           {
             projectUrl && (
-              <Button variant='outline' size='sm' asChild>
+              <Button variant='outline' size='sm' asChild className='bg-orange-50 text-[#F97316] border border-orange-200 hover:bg-[#F97316] hover:text-white'>
                 <a href={projectUrl} target="_blank" rel="noopener noreferrer">
                   <Globe />
                 </a>
@@ -31,7 +31,7 @@ export const ProjectCard: React.FC<Project> = ({ name, company, description, rep
           }
           {
             repoUrl && (
-              <Button variant='outline' size='sm' asChild>
+              <Button variant='outline' size='sm' asChild >
                 <a href={repoUrl} target="_blank" rel="noopener noreferrer">
                   <img src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-icon.svg" alt="Github" width={15} />
                 </a>
@@ -51,7 +51,7 @@ export const ProjectCard: React.FC<Project> = ({ name, company, description, rep
       <CardFooter className='flex flex-wrap gap-2'>
         {
           technologies.map( tech => (
-            <Badge key={tech} className="px-2 py-1 text-sm font-medium hover:bg-primary/50">{ tech }</Badge>
+            <Badge key={tech} className="px-2 py-1 text-sm font-medium hover:bg-primary">{ tech }</Badge>
           ))
         }
       </CardFooter>

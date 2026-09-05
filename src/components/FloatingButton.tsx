@@ -7,12 +7,17 @@ interface FloatingButtonProps {
 }
 
 export const FloatingButton = ({ visible, onScrollTop }: FloatingButtonProps) => {
-  return(
-    <Button 
-      className={`fixed right-1/12 bottom-20 z-10 w-10 h-10 translate-x-1/2 rounded-full p-3 shadow-lg cursor-pointer transition-opacity duration-300 md:w-16 md:h-16 md:bottom-20 ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
-      onClick={onScrollTop}
-    >
-      <ArrowUp className="w-5 h-5"/>
-    </Button>
-  )
-}
+  return (
+      <Button
+          variant="outline"
+          size="icon"
+          aria-label="Volver al inicio"
+          onClick={onScrollTop}
+          className={`fixed right-1/12 bottom-20 z-50 h-11 w-11 translate-x-1/2 rounded-xl border-neutral-200 bg-black/90 p-0 text-white shadow-md backdrop-blur-sm transition-all duration-300 hover:border-[#F97316] hover:bg-[#F97316] hover:text-white hover:shadow-lg hover:shadow-orange-500/20 active:scale-95 md:bottom-20 md:h-12 md:w-12 ${
+              visible ? "opacity-100" : "pointer-events-none opacity-0"
+          }`}
+      >
+        <ArrowUp className="h-5 w-5" />
+      </Button>
+  );
+};

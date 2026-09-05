@@ -41,7 +41,7 @@ export const Accordion = ({
       onClick={handleClick}
       target="__blank"
     >
-      <div className="rounded-lg bg-card text-card-foreground flex">
+      <div className="rounded-lg bg-transparent text-card-foreground flex">
         <div className="flex-none">
           <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
             <AvatarImage
@@ -57,7 +57,7 @@ export const Accordion = ({
             <div className="flex items-center justify-between gap-x-2 text-base">
               <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
                 <span className="inline-flex gap-x-1"></span>
-                {title}
+                <span className="group-hover:text-[#FF8A00]">{title}</span>
                 {badges && (
                   <span className="inline-flex gap-x-1">
                     {badges.map((badge, index) => (
@@ -73,7 +73,7 @@ export const Accordion = ({
                 )}
                 <ChevronRightIcon
                   className={cn(
-                    "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
+                    "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100 group-hover:text-[#FF8A00]",
                     isExpanded ? "rotate-90" : "rotate-0"
                   )}
                 />
@@ -89,16 +89,15 @@ export const Accordion = ({
               initial={{ opacity: 0, height: 0 }}
               animate={{
                 opacity: isExpanded ? 1 : 0,
-
                 height: isExpanded ? "auto" : 0,
               }}
               transition={{
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm"
+              className="overflow-hidden text-xs sm:text-sm"
             >
-              {description}
+              <div className="mt-2">{description}</div>
             </motion.div>
           )}
         </div>

@@ -33,8 +33,8 @@ export const ProjectsSection = () => {
             ))
           }
         </CarouselContent>
-        <CarouselPrevious className="hidden md:flex" />
-        <CarouselNext className="hidden md:flex" />
+        <CarouselPrevious className="hidden md:flex h-10 w-10 rounded-lg border-neutral-200 bg-white text-neutral-600 shadow-sm transition-all duration-200 hover:border-[#F97316] hover:bg-[#F97316] hover:text-white hover:shadow-md hover:shadow-orange-500/20 active:scale-95" />
+        <CarouselNext className="hidden md:flex h-10 w-10 rounded-lg border-neutral-200 bg-white text-neutral-600 shadow-sm transition-all duration-200 hover:border-[#F97316] hover:bg-[#F97316] hover:text-white hover:shadow-md hover:shadow-orange-500/20 active:scale-95" />
       </Carousel>
       <div className="text-muted-foreground py-2 text-center text-sm">
         Proyecto {current} de {count}

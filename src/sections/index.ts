@@ -1,4 +1,5 @@
 export * from './AboutSection'
+export * from './ContactSection'
 export * from './EducationSection'
 export * from './ExperienceSection'
 export * from './FeedbackSection'
