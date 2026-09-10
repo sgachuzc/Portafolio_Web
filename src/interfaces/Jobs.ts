@@ -1,5 +1,3 @@
-import React from "react";
-
 export interface Job {
   company: string,
   logoUrl: string,
