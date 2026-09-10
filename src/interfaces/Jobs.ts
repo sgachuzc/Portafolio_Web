@@ -7,6 +7,6 @@ export interface Job {
   href?: string,
   badges?: string[],
   start: string,
-  end: string
-  description: React.ReactNode
+  end: string,
+  description: string
 }
