@@ -5,7 +5,7 @@ export const CourseCard: React.FC<Course> = ({ imageUrl, name, website }) => {
   return (
     <figure
       className={ cn(
-            "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
+            "relative h-full w-full cursor-pointer overflow-hidden rounded-xl border p-4",
             "border-neutral-200 bg-white hover:border-[#F97316]",
             "hover:shadow-md hover:shadow-orange-500/10 hover:bg-orange-50 hover:transition-all hover:duration-200"
           )}

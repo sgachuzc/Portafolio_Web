@@ -1,19 +1,19 @@
-export const stack = [
-  "Magento",
-  "Laravel",
-  "PHP",
-  "MySQL",
-  "NodeJs",
-  "Express",
-  "HTML",
-  "CSS",
-  "Javascript",
-  "TypeScript",
-  "React",
-  "Bootstrap",
-  "TailwindCSS",
-  "Git",
-  "GitHub",
-  "Gitlab",
-  "Scrum",
-];
+export const stack = {
+  core: [
+      "PHP",
+      "Adobe Commerce",
+      "Laravel",
+      "MySQL",
+      "Git"
+  ],
+  complementary: [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Livewire",
+    "Blade",
+    "Tailwind CSS",
+    "Bootstrap",
+    "Node.js",
+  ]
+}

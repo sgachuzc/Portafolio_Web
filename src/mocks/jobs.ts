@@ -11,12 +11,7 @@ export const jobs: Job[] = [
     start: "Febrero 2022",
     end: "Presente",
     description:
-      "Liderazgo en el desarrollo de módulos complejos para flujos de venta de alto impacto e integración " +
-        "de tecnología eSIM. Desarrollo e implementación de un agente de Inteligencia Artificial " +
-        "especializado en Adobe Commerce, con capacidades avanzadas para la búsqueda, lectura y " +
-        "diagnóstico automatizado de logs. Construcción de herramientas para el procesamiento masivo de " +
-        "órdenes, integración de ecosistemas de marketing (Mautic, Meta, APIs) y mentoría técnica continua " +
-        "al equipo mediante documentación y capacitaciones especializadas."
+      "Liderazgo técnico en el desarrollo de soluciones backend para Movistar México, abarcando módulos complejos de venta de alto impacto y la integración de tecnología eSIM. Desarrollo e implementación de un agente de Inteligencia Artificial especializado en Adobe Commerce para búsqueda, lectura y diagnóstico automatizado de logs. Construcción de herramientas para procesamiento masivo de órdenes, integración con ecosistemas de marketing (Mautic, Meta, APIs) y mentoría técnica continua al equipo mediante documentación y capacitaciones especializadas."
   },
   {
     company: "Ayuntamiento de Celaya",

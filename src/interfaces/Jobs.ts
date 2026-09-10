@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface Job {
   company: string,
   logoUrl: string,
@@ -6,5 +8,5 @@ export interface Job {
   badges?: string[],
   start: string,
   end: string
-  description: string
+  description: React.ReactNode
 }

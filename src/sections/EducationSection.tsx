@@ -1,5 +1,4 @@
 import { Accordion, CourseCard, Section, Title } from "@/components"
-import { Marquee } from "@/components/ui/marquee"
 import { courses } from '@/mocks';
 
 export const EducationSection = () => {
@@ -16,17 +15,13 @@ export const EducationSection = () => {
         period={"2014 - 2020"}
       />
       <br />
-      <Title title="Cursos y Certificaciones"/>
-      <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-        <Marquee pauseOnHover className="[--duration:20s]">
+      <Title title="Cursos"/>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {
-            courses.map( course => (
-              <CourseCard key={course.name} {...course} />
-            ))
-          }      
-        </Marquee>
-        <div className="from-background pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r"></div>
-        <div className="from-background pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l"></div>
+              courses.map( course => (
+                  <CourseCard key={course.name} {...course} />
+              ))
+          }
       </div>
     </Section>
   )
